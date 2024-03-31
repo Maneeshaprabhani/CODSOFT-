@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d); /* Updated gradient colors */
+}
+
+.calculator {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    background: #282c34; /* Dark theme for calculator background */
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.2);
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: #3c4049; /* Lighter shade for input background */
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #dcdcdc; /* Light grey color for input text */
+}
+
+input::placeholder {
+    color: #bfbfbf; /* Lighter placeholder text color */
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #3c4049; /* Matching button background with input */
+    color: #dcdcdc; /* Light grey color for button text */
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+button:hover {
+    background-color: #50555c; /* Slightly lighter background on hover */
+}
+
+.equalBtn {
+    background-color: #4caf50; /* Green color for equal button */
+}
+
+.operator {
+    color: #f44336; /* Red color for operator buttons */
+}
